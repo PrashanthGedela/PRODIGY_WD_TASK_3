@@ -1,0 +1,109 @@
+body {
+    text-align: center;
+    background-color: #8e8dbe;
+    font-family: cursive;
+}
+
+#head {
+    font-size: 45px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(20) infinite, blink-caret 0.75s step-end infinite;
+    
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    color: black;
+    font-size: 10vmin;
+    font-family: cursive;
+    background-color: white;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+#reset {
+    border-radius: 1rem;
+    margin-top: 10vh;
+    border: none;
+    background-color: white;
+    height: 5vmin;
+    font-size: large;
+    font-family: cursive;
+    color: white;
+    background-color: #191913;
+}
+
+#reset:hover{
+    cursor: pointer;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    font-family: cursive;
+}
+
+#new-btn:hover{
+    cursor: pointer;
+}
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+    font-family: cursive;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+
